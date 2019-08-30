@@ -7,6 +7,7 @@
         var $jml_pulsa;
         // Pembuatan method mengirim pesan yang berisi perintah mengurangi nilai property jml_pulsa sebesar 150   
         function mengirim_pesan(){
+            // Variable $this berfungsi untuk menunjuk object itu sendiri
             $this->jml_pulsa -= 150;
             echo "mengirim SMS, pulsa terpotong 150<br>";
         }
