@@ -3,7 +3,7 @@
         public function tampil_pesan_handphone(){
             // self berarti menunjukan method yg berada pada 
             echo self::tampil_pesan();
-            //  
+            //  method ini merujuk ke class child jika objek child yg di inisiasi
             echo $this->tampil_pesan();
         }
 
@@ -14,7 +14,9 @@
 
     class smartphone extends handphone{
         public function tampil_pesan_smartphone(){
+            // parent merujuk pada method yg ad di class parent
             echo parent::tampil_pesan();
+            // merujuk pada method class ini
             echo $this->tampil_pesan();
         }
 
